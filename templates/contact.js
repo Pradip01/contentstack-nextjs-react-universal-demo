@@ -3,7 +3,7 @@ import homestyle from '../styles/home-style'
 import Layout from '../partials/MyLayout'
 export default class Contact extends React.Component {
     render() {
-        const page = this.props.page
+        const page = this.props.page[0];
         const header = page.reference_header[0];
         const footer = page.reference_footer[0];
 
@@ -48,7 +48,6 @@ export default class Contact extends React.Component {
                                 <h2 className="email-id"><a href="#">{page.contact_details.email}</a></h2>
                             </div>
                         </div>
-                        <div className="map-sec"><iframe src={page.contact_details.map}></iframe></div>
                     </main>
                 </div>
                 <footer>
